@@ -11,8 +11,7 @@
 <p> <%@groups.each do |group|%> </p>
 			<h3><a href="/groups/<%=group.id%>"><%=group.name%></a></h3>
 			<p>Members: <%=group.users.count%></p>
-			<p><%=group.name%></p>
-			<p><%=group.user.id%></p>
+			
 			<p><%=session[:user_id]%></p>
 			<%if group.user.id === session[:user_id] %>
 			<form action='/groups/<%=group.id%>' method='post'>

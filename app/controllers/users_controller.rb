@@ -10,7 +10,7 @@ class UsersController < ApplicationController
     session[:name] = @user.first_name
     session[:user_id] = @user.id
     	if @user.valid?
-      	flash[:success] = "You are registered"
+      	flash[:success] = "You are registered.You can log in"
    	 	else
       	flash[:errors] = @user.errors.full_messages
     	end 
