@@ -34,9 +34,9 @@
 <p><%=@group.description%></p>
 
 <%if @created_by.id == session[:user_id]%>
-<p>Created by: YOU</p>
+<p><b>Created by:</b> YOU</p>
 <%else%>
-<p>Created by: <%=@created_by.first_name%></p>
+<p><b>Created by: </b><%=@created_by.first_name%></p>
 <%end%>
 <h3>Members: </h3>
 
