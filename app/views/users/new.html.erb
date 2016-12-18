@@ -12,9 +12,7 @@
 
 	<input type="submit" value="Register">
 </form>
-<%if flash[:errors]%>
-	<p><%=flash[:errors]%></p> 
-<% end %>
+
 <% if flash[:success] %>
 	<p><%=flash[:success]%></p>
 <%end%>
@@ -33,6 +31,3 @@
 	<p><%=flash[:errors]%></p> 
 <% end %>
 
-<% if flash[:success] %>
-	<p><%=flash[:success]%></p>
-<%end%>
